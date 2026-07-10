@@ -7,10 +7,6 @@
     max-width: 500px;
 }
 
-.show {
-    max-width: 300px;
-}
-
 body {
     margin-top: 0;
     background-color: #fffded;
@@ -98,13 +94,27 @@ p, a {
     font-family: rokkitt;
 }
 
-#p2 {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+#room {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
-#p2 p{
-    max-width: 433px;
-    color: #7a306c;
+#room img {
+    justify-self: center;
+}
+
+p {
+    justify-self: left;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.show {
+    width: 350px;
+    height: 200px;
+    object-fit: cover
 }

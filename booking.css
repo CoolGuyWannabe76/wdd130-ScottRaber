@@ -69,7 +69,7 @@ nav a:hover {
 footer {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: #688b58;
 }
 
@@ -98,13 +98,31 @@ p, a {
     font-family: rokkitt;
 }
 
-#p2 {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+form {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  justify-self: center;
+  font-size: larger;
 }
 
-#p2 p{
-    max-width: 433px;
-    color: #7a306c;
+label {
+  justify-self: end;
+  font-family: rokkitt;
+}
+
+button {
+  justify-self: center;
+  grid-column: 1 / 3;
+  color: #fffded;
+  background-color: #7a306c;
+  font-size: 20px;
+  font-family: bungee;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+button:hover {
+  color: #000f08;
+  background-color: #fffded;
 }
